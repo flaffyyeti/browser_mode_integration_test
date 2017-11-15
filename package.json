@@ -1,0 +1,11 @@
+{
+  "name": "Integration_tests",
+  "version": "1.0.0",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+"scripts": {
+    "test": "node server.js"
+  }
+}
