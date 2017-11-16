@@ -21,7 +21,7 @@ describe('Test REST api', function() {
 		    .end((err, res) => {
 				testAsync(done, function(){
                    expect(res).to.have.status(200);
-				   assert.equal(5, res.body);
+				   assert.equal(5, res.body.result);
 				}.bind(res));
 		    });
     });
@@ -46,7 +46,7 @@ describe('Test REST api', function() {
 		    .end((err, res) => {
 				testAsync(done, function(){
 			       expect(res).to.have.status(200);
-				   assert.equal(6, res.body);
+				   assert.equal(6, res.body.result);
 				}.bind(res));
 		    });
     });
